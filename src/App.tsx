@@ -72,6 +72,7 @@ export default function App() {
 
 
       <p style={{ fontWeight: "bold" }}>
+        {getStatusText()}
         {game.status === "waiting" && "Waiting for opponent to join..."}
         {game.status === "playing" &&
           (game.turn === symbol ? "Your turn" : "Opponent's turn")}
